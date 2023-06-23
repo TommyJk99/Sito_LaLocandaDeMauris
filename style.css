@@ -220,6 +220,22 @@ header{
     float: right;
 }
 
+.legenda-menu{
+    margin: 0 8rem;
+    text-align: center;
+    line-height: 2;
+    color: grey;
+}
+
+.simbolo-eco{
+    margin: 0 -0.1rem;
+}
+
+.logo-dop{
+    width: 1.2em;
+    height: 1.2rem;
+    line-height: -10;
+}
 /*COMANDI SINGOLI*/
 .bold{
     font-weight: bold;
@@ -285,6 +301,10 @@ header{
     font-size: 1.3rem;
 }
 
+.font-piccolo{
+    font-size: 0.9rem;
+}
+
 .img-brightness-low{
     filter: brightness(0.7);
 }
@@ -306,4 +326,9 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+.opacity-null{
+    opacity: 0;
+}
+
 
