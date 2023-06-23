@@ -8,7 +8,6 @@
 </head>
 <body>
     <header>
-        <div></div>
         <!--NAVIGATION-BAR-->
         <nav>
             <div class="navbar white">
@@ -368,7 +367,7 @@
         <div class="mar-bottom2">Pomodoro, Burrata, Pomodorini Pizzuttello, Olive Carolea in salamoia (con nocciolo), Pancetta Croccante, Scamorza, Origano, Basilico.</div>
     </div>
 
-    <div class="legenda-menu font-piccolo">
+    <div class="legenda-menu font-piccolo mar-bottom2">
         <span class="line-height">
             Tutti i Secondi Piatti sono accompagnati da Contorno
             <br>
@@ -387,37 +386,45 @@
             ★ Solo con impasto Macina d'Altri Tempi
             <br>
             ★★ Solo in Stagione (Primavera -Estate) in alternativa Cipolla Ramata
-        </span>
-        
+        </span>   
     </div>
+    <!--SEPARATORE-->
+    <div class="flexbox-center">
+        <img class="ghirigoro mar-bottom4" src="./img/ghirigoro.png" alt="ghirigoro">
+    </div>
+    <footer>
+            <!--PRIMA COLONNA-->
+            <div class="colonna font-piccolo">
+                <div class="titolo-piccolo gv">Informazioni</div>
+                <div class="linea-separa-footer"></div>
+                <div class="font-piccolo">📞 +39 0463 903037 / +39 339 6012046</div>
+                <div class="font-piccolo mar-bottom1">✉️ info@lalocandademauris.it</div>
+                <div>Ristorante “La Locanda De Mauris” – Via Nazionale, 100 – 38027 Croviana (TN) Val di Sole</div>
+                <br>
+                <div>Siamo aperti tutti i giorni tranne il Martedì,
+                    dalle 12.00 alle 14.00 e dalle 18.30 alle 22.00</div>
+            </div>
+            <!--SECONDA COLONNA-->
+            <div class="colonna font-piccolo">
+                <div class="titolo-piccolo gv">Ecoristorazione</div>
+                <div class="linea-separa-footer"></div>
+                <div class="mar-bottom1 mar-bottom-half"><span>Questo ristorante aderisce all'iniziativa Ecoristorazione, per un'esperienza gastronomica di 
+                    qualità, sostenibile e rispettosa del territorio.</span></div>
+                <div class="img-box"><img src="./img/ecorist_logo.png" alt="ecorist_logo"></div>
+            </div>
+            <!--TERZA COLONNA-->    
+            <div class="colonna font-piccolo">
+                <div class="titolo-piccolo gv">Dicono di Noi</div>
+                <div class="linea-separa-footer"></div>
+                <div class="tripadv-box"><img src="./img/tripadv.png" alt="tripadv"></div>
+            </div>
+
+        </div>
+    </footer>
 
     
     
     <!--SCRIPTS-->
-    <script>
-        const body = document.body;
-        let lastScroll = 0;
-
-        window.addEventListener('scroll',() =>{
-            const currentScroll=window.pageYOffset
-
-            if(currentScroll<=0){
-                body.classList.remove("scroll-up")
-            }
-
-            if(currentScroll > lastScroll && !body.classList.contains("scroll-down")){
-                body.classList.remove("scroll-up")
-                body.classList.add("scroll-down")
-            }
-
-            if(currentScroll < lastScroll && body.classList.contains("scroll-down")){
-                body.classList.remove("scroll-down")
-                body.classList.add("scroll-app")
-            }
-
-            lastScroll=currentScroll;          
-        })
-
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

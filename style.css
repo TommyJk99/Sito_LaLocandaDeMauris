@@ -74,7 +74,7 @@ header{
     transform: scaleX(0.85);
 }
 /*HOME*/
-.home{
+.home:not(.adatta-schermo){
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,6 +216,13 @@ header{
     margin-bottom: 2rem;
 }
 
+.linea-separa-footer{
+    background-color: #BF9F6E;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
 .tutto-sx{
     float: right;
 }
@@ -236,6 +243,50 @@ header{
     height: 1.2rem;
     line-height: -10;
 }
+/*FOOTER*/
+
+footer{
+    display: flex;
+    background-color: #2F383D;
+    justify-content: space-around;
+    color: white;
+    gap: 3rem;
+    padding: 4rem 4rem;
+    border-top: 4px solid #BF9F6E;
+}
+
+.tripadv-box{
+    width: 15rem;
+    height: 10rem;
+    margin-top: 0.3rem;
+}
+
+.tripadv-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: fill;
+}
+
+.colonna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    max-width: 18rem;
+}
+.img-box{
+    width:7.5rem;
+    height: 6.5rem;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
 /*COMANDI SINGOLI*/
 .bold{
     font-weight: bold;
@@ -297,6 +348,10 @@ header{
     font-size: 3rem;
 }
 
+.titolo-piccolo{
+    font-size: 2rem;
+}
+
 .font-medio{
     font-size: 1.3rem;
 }
@@ -330,5 +385,10 @@ header{
 .opacity-null{
     opacity: 0;
 }
+
+/*.adatta-schermo{
+    max-width: 1280px;
+    margin: auto;
+}*/
 
 
